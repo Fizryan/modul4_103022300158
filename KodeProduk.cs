@@ -8,7 +8,7 @@ namespace modul4_103022300158
 {
     class KodeProduk
     {
-        private static Dictionary<String, String> produkList = new Dictionary<string, string>()
+        private static Dictionary<String, String> produkList = new Dictionary<string, string>()                                     // List Produk
         {
             {"Laptop", "E100"},
             {"Smartphone", "E101"},
@@ -22,7 +22,7 @@ namespace modul4_103022300158
             {"Kamera", "E109"},
         };
 
-        public static string GetKodeProduk(String produk)
+        public static string GetKodeProduk(String produk)                                                                           // Getter Kode Produk
         {
             return produkList.TryGetValue(produk, out string kodeProduk) ? kodeProduk : "Kode Produk tidak ditemukan";
         }
